@@ -8,3 +8,9 @@ TODO:
 * User/Collab following
 * Messaging
 * File upload
+
+
+Done:
+=====
+
+* Simple newCollab insert with Router.go(recentlyCreatedCollab)
