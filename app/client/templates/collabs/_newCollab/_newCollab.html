@@ -1,24 +1,28 @@
 <template name="newCollab">
-
-  <form id="newCollab">
+<div class="formWrap">
+  <form id="newCollab" class="inputForm">
     <div class="newCollab step-1">
       <input type="text" name="title" placeholder="Our Awesome Project">
       <input type="text" name="tags" placeholder="music,video,painting,app,...">
+      <a href="#" class="one-to-two">Next, we set our team...</a>
     </div>
     <div class="newCollab step-2">
-      <div class="choice selectTeam">
-        <h3>Have a Team?</h3>
-        <a href="#" class="addTeam">Add Them!</a>
+      <div class="choices">
+        <div class="choice selectTeam">
+          <h3>Have a Team?</h3>
+          <a href="#" class="addTeam">Add Them!</a>
+        </div>
+        <div class="choice findTeam">
+          <h3>Want a Team?</h3>
+          <a href="#" class="postForTeam">Ask for Help!</a>
+        </div>
       </div>
-      <div class="choice findTeam">
-        <h3>Want a Team?</h3>
-        <a href="#" class="postForTeam">Ask for Help!</a>
-      </div>
+      <a href="#" class="two-to-three">Then, we try to create it!</a>
     </div>
     <div class="newCollab step-3">
       <h3>Let's GO!</h3>
-      <input type="submit" value="Dashboard">
+      <input type="submit" value="Dashboard" class="submit">
     </div>
   </form>
-
+</div>
 </template>

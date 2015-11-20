@@ -24,6 +24,15 @@ Template.newCollab.events({
         Router.go('/collabs/view/' + data);
       }
     });
+  },
+
+  'click .one-to-two': () => {
+    $('.step-1').hide();
+    $('.step-2').show();
+  },
+  'click .two-to-three': ()=> {
+    $('.step-2').hide();
+    $('.step-3').show();
   }
 });
 
@@ -38,9 +47,11 @@ Template.newCollab.helpers({
 /*****************************************************************************/
 Template.newCollab.onCreated(function () {
   Session.setDefault('isPublic',true);
+
 });
 
 Template.newCollab.onRendered(function () {
+  $('.step-2, .step-3').hide();
 });
 
 Template.newCollab.onDestroyed(function () {
