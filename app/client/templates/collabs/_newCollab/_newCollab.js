@@ -7,6 +7,11 @@ Template.newCollab.events({
     event.preventDefault();
     let title = event.target.title.value;
     let tags = event.target.tags.value;
+    tags = tags.split(',');
+    if(tags[0] === ""){
+      Bert.alert('You gotta put at least one tag in! What medium are we using?', 'warning');
+      return false;
+    }
     let collabObject = {
       title: title,
       tags: tags

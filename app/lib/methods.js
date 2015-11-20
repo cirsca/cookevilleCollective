@@ -5,9 +5,6 @@
 Meteor.methods({
   'newCollab': (collabObject) => {
     console.log(collabObject);
-    let tags = collabObject.tags;
-    tags = tags.split(',');
-    collabObject.tags = tags;
     collabObject.createdAt = new Date();
     collabObject.creator = 'coolGuy';
     Collabs.insert(collabObject);

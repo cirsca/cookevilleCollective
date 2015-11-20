@@ -1,3 +1,10 @@
 <template name="viewCollab">
   <h2>I am view collab!</h2>
+  {{#each collab}}
+    <h3>{{title}}</h3>
+    {{#each tags}}
+      <p>{{this}}</p>
+    {{/each}}
+  {{/each}}
+
 </template>
