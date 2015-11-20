@@ -1,0 +1,13 @@
+// If you want to override materialize sass variables you can uncomment the following:
+@import "{poetic:materialize-scss}/bower_components/materialize/sass/components/_color.scss";
+$primary-color: #3F51B5;
+$primary-dark: #303F9F;
+$primary-light: #C5CAE9;
+$accent: #FF5252;
+$text-primary: #212121;
+$text-secondary: #727272;
+$divider: #B6B6B6;
+
+// import main scss file
+@import "{poetic:materialize-scss}/bower_components/materialize/sass/materialize.scss";
+
